@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosoly</title>
+    <style>
+img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        }
+.middle{
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    z-index:1;
+}
+td{
+    padding:50px;
+}
+a{
+    display:block;
+    width:50px;
+    height:50px;
+    background-color:aliceblue;
+    font-size:39px;
+    text-decoration:none;
+    border:1px solid red;
+    color:red;
+    font-family:Verdana;
+}
+.triangle-border {
+    position: absolute;
+    left: 40%;
+    transform: translate(-40%);
+}
+.mid2 {
+    position: absolute;
+    left: 41%;
+    margin-top:80px;
+    transform: translate(-41%);
+    font-family: Verdana;
+}
+*{
+    user-select:none;
+}
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <img src="a.png" class="triangle-border" width="300px" height="150px" style="margin-top:-450px">
+        <p class="mid2">
+            asd
+    </p>
+    <img src="a.jpg" width="400px" height="600px">
+    <div class="middle">
+        <table>
+            <tr>
+                <td><a href="#" onclick="mosoly(1)">1</a></td>
+                <td><a href="#" onclick="mosoly(2)">2</a></td>
+                <td><a href="#" onclick="mosoly(3)">3</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" onclick="mosoly(4)">4</a></td>
+                <td><a href="#" onclick="mosoly(5)">5</a></td>
+                <td><a href="#" onclick="mosoly(6)">6</a></td>
+            </tr>
+            <tr>
+                <td><a href="#" onclick="mosoly(7)">7</a></td>
+                <td><a href="#" onclick="mosoly(8)">8</a></td>
+                <td><a href="#" onclick="mosoly(9)">9</a></td>
+            </tr>
+        </table>
+      </div>
+<script>
+
+	var one = 0;
+	var two = 0;
+	var three = 0;
+	var four = 0;
+	var five = 0;
+	var six = 0;
+	var seven = 0;
+	var eight = 0;
+	var nine = 0;
+    function mosoly(x)
+    {
+       if(x==1)
+        {
+            document.querySelector(".mid2").innerHTML = "A WEBEX";
+            one = 1;
+        }
+        if(x==2)
+        {
+            document.querySelector(".mid2").innerHTML = "EGY";
+            two = 1;
+        }
+        if(x==3)
+        {
+            document.querySelector(".mid2").innerHTML = "ROSSZ";
+            three = 1;
+        }
+        if(x==4)
+        {
+            document.querySelector(".mid2").innerHTML = "ÖTLET";
+            four = 1;
+        }
+        if(x==5)
+        {
+            document.querySelector(".mid2").innerHTML = "!";
+            five = 1;
+        }
+        if(x==6)
+        {
+            document.querySelector(".mid2").innerHTML = "NE";
+            six = 1;
+        }
+        if(x==7)
+        {
+            document.querySelector(".mid2").innerHTML = "LEGYEN";
+            seven = 1;
+        }
+        if(x==8)
+        {
+            document.querySelector(".mid2").innerHTML = "WEBEX";
+            eight = 1;
+        }
+        if(x==9)
+        {
+            document.querySelector(".mid2").innerHTML = "OKTATÁSRA!";
+            nine = 1;
+        }
+        if ( one == 1 && two == 1 && three == 1 && four == 1 && five == 1 && six == 1 && seven == 1 && eight == 1 && nine == 1 ) 
+        {
+            alert("A CISCO SZERVEREI, LEROBBANT MIKROHULLÁMÚSÜTŐK");
+	 	one = 0;
+		two = 0;
+		three = 0;
+		four = 0;
+		five = 0;
+		six = 0;
+		seven = 0;
+		eight = 0;
+		nine = 0;
+	    
+        }
+    }
+</script>
+</body>
+</html>
