@@ -1,0 +1,45 @@
+img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        }
+.middle{
+    transition: .5s ease;
+    display:inline-block;
+    text-align: center;
+    z-index:1;
+    background-image:url('mona_lisa.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index:500;
+}
+td{
+    padding:50px;
+}
+a{
+    display:block;
+    width:50px;
+    height:50px;
+    background-color:transparent;
+    font-size:39px;
+    text-decoration:none;
+    border:1px solid white;
+    color:white;
+    font-family:Verdana;
+}
+.triangle-border {
+    position: absolute;
+    left: 40%;
+    transform: translate(-40%);
+}
+.mid2 {
+    position: absolute;
+    left: 41%;
+    margin-top:80px;
+    transform: translate(-41%);
+    font-family: Verdana;
+}
+*{
+    user-select:none;
+}
